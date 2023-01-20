@@ -9,11 +9,13 @@ function start(cells) {
             } else {
                 cell.textContent = 'O'
             }
-            i++;
             this.removeEventListener('click', step);
             if (isWinner(cells) == true) {
-                console.log(`Победитель ${this.textContent}`);
-            }
+                alert(`Победитель ${this.textContent}`)
+            } else if(i == 8) {
+                alert('Ничья')
+            };
+            i++;
         })
 
     }

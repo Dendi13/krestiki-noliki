@@ -1,7 +1,68 @@
-#field td {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/1653308978_2-celes-club-p-pastelnii-fon-estetika-krasivie-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.winner {
+    width: 300px;
+    height: 150px;
+    background-color: #FFA07A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.winner:hover {
+    background-color: #f78051;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 30px;
+}
+
+table td {
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
     text-align: center;
     cursor: pointer;
+
+}
+
+
+tr:first-child td {
+    border-top: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr td:first-child {
+    border-left: none;
+}
+
+tr td:last-child {
+    border-right: none;
 }
