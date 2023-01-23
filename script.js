@@ -1,4 +1,6 @@
 let cells = document.querySelectorAll('#field td');
+let winner = document.querySelector('#winner')
+let value = document.querySelector('#value');
 
 let i = 0;
 function start(cells) {
@@ -11,9 +13,12 @@ function start(cells) {
             }
             this.removeEventListener('click', step);
             if (isWinner(cells) == true) {
-                alert(`Победитель ${this.textContent}`)
+                winner.style.display = 'block';
+                value.textContent = this.textContent;
             } else if(i == 8) {
-                alert('Ничья')
+                winner.style.display = 'block';
+                winner.textContent = 'Ничья';
+                winner.style.textAlign = 'center';
             };
             i++;
         })

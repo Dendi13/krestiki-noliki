@@ -39,6 +39,8 @@ body {
 table {
     border-collapse: collapse;
     font-size: 30px;
+    font-family: 'Readex Pro', sans-serif;
+
 }
 
 table td {
