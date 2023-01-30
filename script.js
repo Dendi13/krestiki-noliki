@@ -23,11 +23,10 @@ function start(cells) {
             };
             i++;
         })
+        clos.addEventListener('click', function() {
+            location.reload();
+        })
     }
-    clos.addEventListener('click', function () {
-        winner.style.display = 'none';
-        this.removeEventListener('click', start)
-    })
 }
 
 start(cells);
